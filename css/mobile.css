@@ -2,6 +2,11 @@
   .container {
     max-width: 426px;
   }
+
+  .link-profession {
+    width: 40px;
+    height: 40px;
+  }
 }
 /* !=====================tab-style================================= */
 
@@ -17,6 +22,29 @@
   .item-advantages {
     width: calc((100% - 24px) / 2);
   }
+
+  .title-team-list {
+    flex-direction: row;
+    justify-content: center;
+    gap: 62px 24px;
+    flex-wrap: wrap;
+  }
+
+  .list-customers {
+    gap: 72px 24px;
+  }
+
+  .item-list-customers {
+    width: 168px;
+    flex-basis: calc((100% - 48px) / 3);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .list-customers {
+    max-width: 552px;
+    margin: 0 auto;
+  }
 }
 
 /* **=======================desctop-style========================== */
@@ -27,8 +55,7 @@
   }
 
   .section-heading {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 120px 0;
   }
 
   .list-advantages {
@@ -39,7 +66,7 @@
   .item-advantages {
     display: flex;
     flex-direction: column;
-    flex-basis: calc((100% - 48px) / 3);
+    flex-basis: calc((100% - 72px) / 4);
   }
 
   .item-advantages-icon {
@@ -89,5 +116,17 @@
 
   .benefits-item {
     width: calc((100% - 48px) / 3);
+  }
+
+  .section-caption {
+    padding: 120px 0;
+  }
+
+  .section-customers {
+    padding: 120px 0;
+  }
+
+  .item-list-customers {
+    flex-basis: calc((100% - 120px) / 6);
   }
 }
