@@ -7,12 +7,48 @@
     width: 40px;
     height: 40px;
   }
+
+  .form-footer-inp {
+    width: 398px;
+  }
 }
 /* !=====================tab-style================================= */
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 766px;
+  }
+
+  .section-subject {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bacgraund-tab.jpg);
+  }
+
+  @media (min-resolution: 192dpi) {
+    .section-subject {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/bacgraund-tab-2x.jpg);
+    }
+  }
+
+  .container-subject {
+    height: 436px;
+    gap: 36px;
+  }
+
+  .title {
+    color: var(--background);
+    text-align: center;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    max-width: 496px;
+    font-size: 56px;
   }
 
   .list-advantages {
@@ -38,12 +74,41 @@
     width: 168px;
     flex-basis: calc((100% - 48px) / 3);
   }
+
+  .form-footer-wrap {
+    text-align: start;
+  }
+
+  .form-footer-inp {
+    width: 264px;
+  }
+
+  .form-footer {
+    gap: 24px;
+    flex-direction: row;
+  }
+
+  .wraper-foter-light {
+    align-items: start;
+  }
+
+  .wraper-foter-centr {
+    /* margin-right: 80px; */
+    margin: 0;
+    text-align: start;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .list-customers {
     max-width: 552px;
     margin: 0 auto;
+  }
+  .cont-footer {
+    flex-direction: row;
+    padding-left: 108px;
+    flex-wrap: wrap;
+    gap: 72px 24px;
   }
 }
 
@@ -52,6 +117,29 @@
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
+  }
+
+  .section-subject {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bacgraund.jpg);
+  }
+
+  @media (min-resolution: 192dpi) {
+    .section-subject {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/bacgraund-2x.jpg);
+    }
+  }
+
+  .container-subject {
+    height: 600px;
+    gap: 48px;
   }
 
   .section-heading {
@@ -128,5 +216,20 @@
 
   .item-list-customers {
     flex-basis: calc((100% - 120px) / 6);
+  }
+
+  .cont-footer {
+    flex-direction: row;
+  }
+
+  .footer {
+    padding: 100px 0;
+  }
+  .wraper-foter-light {
+    margin-right: 120px;
+  }
+
+  .wraper-foter-centr {
+    margin-right: 80px;
   }
 }

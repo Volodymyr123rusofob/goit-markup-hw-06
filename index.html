@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <!-- <header class="header">
+  <header class="header">
     <div class="container container-hed">
       <nav class="navigation">
         <a class="navigation-link link focused" href="./index.html"> Web
@@ -36,6 +36,14 @@
           </li>
         </ul>
       </nav>
+      <button class="button-mob-menu button focused js-open-menu" type="button" aria-expanded="false"
+        aria-controls="mobile-menu">
+        <svg class="icon-hamburger" xmlns="http://www.w3.org/2000/svg" width="32" height="22" viewBox="0 0 32 22"
+          fill="none">
+          <path d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861" stroke="#2E2F42"
+            stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
       <address class="address">
         <ul class="list container-nav">
           <li class="address-item">
@@ -47,14 +55,80 @@
         </ul>
       </address>
     </div>
-  </header> -->
+    <div class="menu-mob" js-menu-container>
+      <div class="top-mob">
+        <button class="close-button-mob-menu" type="button" data-modal-close>
+          <svg class="close-button" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <div class="wrap-mob">
+          <ul class="list-mob list ">
+            <li class="focused ">
+              <a class="navigation-item link list-link-mob focused " href="./index.html">Studio</a>
+            </li>
+            <li class="focused">
+              <a class="navigation-item link list-link-mob focused" href="./portfolio.html"
+                target="_blank">Portfolio</a>
+            </li>
+            <li class="focused">
+              <a class="navigation-item link list-link-mob focused" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-mob">
+        <div>
+          <ul class="list container-nav">
+            <li class="address-item-mob">
+              <a class="address-info-mob focused link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+            <li class="address-item-mail">
+              <a class="address-info-mail focused link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="profession-icon list">
+          <li class="profession-icon-item">
+            <a class="link-profession" href="https://www.instagram.com/">
+              <svg class="icon" width="24" height="24">
+                <use class="icon-svg" href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="profession-icon-item">
+            <a class="link-profession" href="https://twitter.com/?lang=uk">
+              <svg class="icon" width="24" height="24">
+                <use class="icon-svg" href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="profession-icon-item">
+            <a class="link-profession" href="https://uk-ua.facebook.com/">
+              <svg class="icon" width="24" height="24">
+                <use class="icon-svg" href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="profession-icon-item">
+            <a class="link-profession"
+              href="https://www.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F">
+              <svg class="icon" width="24" height="24">
+                <use class="icon-svg" href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
   <main>
-    <!-- <section class=" section-subject">
+    <section class=" section-subject">
       <div class="container container-subject">
         <h1 class="title">Effective Solutions for Your Business</h1>
         <button class="title-button button focused" type="button" data-modal-open>Order Service</button>
       </div>
-    </section> -->
+    </section>
     <section class="section-heading">
       <div class="container">
         <h2 class="visually-hidden">advantages</h2>
@@ -347,7 +421,7 @@
     </section>
   </main>
   <footer class="footer">
-    <div class=" cont-footer">
+    <div class=" cont-footer container">
       <div class="wraper-foter-light">
         <a class="footer-logo focused link" href="./index.html">Web
           <span class="logo-footer">Studio</span>
@@ -395,7 +469,7 @@
         <p class="form-footer-title">Subscribe</p>
         <form class="form-footer">
           <label class="form-footer-lab" for="inp-footer">
-            <input name="inp-footer" class="form-footer-inp" id="inp-footer" type="email" placeholder="E-mail" />
+            <input class="form-footer-inp" name="inp-footer" id="inp-footer" type="email" placeholder="E-mail" />
           </label>
           <button class="button-form-footer" type="submit">Subscribe
             <svg class="icon-footer-mail" height="24" width="24">
@@ -465,8 +539,9 @@
         <button class="button-form" type="submit">Send</button>
       </form>
     </div>
-  </div>
-  <script src="./js/modal.js"></script> -->
+  </div> -->
+  <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
