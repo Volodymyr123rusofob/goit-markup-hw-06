@@ -11,6 +11,10 @@
   .form-footer-inp {
     width: 398px;
   }
+
+  .modal-window {
+    width: 392px;
+  }
 }
 /* !=====================tab-style================================= */
 
@@ -141,6 +145,34 @@
     /* margin-right: 80px; */
     margin: 0;
     text-align: start;
+  }
+
+  .modal-window {
+    width: 408px;
+    padding: 72px 24px 24px 24px;
+  }
+
+  .section-filter {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .section-filter-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-right: 0;
+  }
+
+  .list-filter {
+    column-gap: 24px;
+    row-gap: 72px;
+    padding-top: 64px;
+    flex-direction: row;
+  }
+
+  .upper-item {
+    width: calc((100% - 24px) / 2);
   }
 }
 
@@ -293,5 +325,32 @@
 
   .wraper-foter-centr {
     margin-right: 80px;
+  }
+
+  .section-filter {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+  .section-filter-list {
+    display: flex;
+    margin-bottom: 72px;
+  }
+
+  .list-filter {
+    padding-top: 0;
+    row-gap: 48px;
+  }
+
+  .upper-item {
+    width: calc((100% - 48px) / 3);
+  }
+
+  .section-filter-item {
+    padding: 12px 24px;
+  }
+
+  .filter-button {
+    padding: 12px 24px;
   }
 }

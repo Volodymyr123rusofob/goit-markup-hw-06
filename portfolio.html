@@ -10,6 +10,7 @@
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -25,11 +26,12 @@
                     <span class="logo">Studio</span>
                 </a>
                 <ul class="list-nav-filter list container-nav">
-                    <li class="focused">
-                        <a class="navigation-item link list-link focused" href="./index.html" target="_blank">Studio</a>
-                    </li>
                     <li class="focused ">
-                        <a class="navigation-item link list-link focused current" href="./portfolio.html">Portfolio</a>
+                        <a class="navigation-item link list-link focused " href="./index.html">Studio</a>
+                    </li>
+                    <li class="focused">
+                        <a class="navigation-item link list-link focused current" href="./portfolio.html"
+                            target="_blank">Portfolio</a>
                     </li>
                     <li class="focused">
                         <a class="navigation-item link list-link focused" href="">Contacts</a>
@@ -37,7 +39,7 @@
                 </ul>
             </nav>
             <address class="address">
-                <ul class="list container-nav">
+                <ul class="list container-nav tab">
                     <li class="address-item">
                         <a class="address-info focused link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
@@ -46,12 +48,87 @@
                     </li>
                 </ul>
             </address>
+            <button class="button-open-mob-menu button focused" type="button" data-menu-open>
+                <svg class="icon-hamburger" xmlns="http://www.w3.org/2000/svg" width="32" height="22"
+                    viewBox="0 0 32 22" fill="none">
+                    <path d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861" stroke="#2E2F42"
+                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+        <div class="menu-mob is-hidden" data-menu>
+            <div class="top-mob">
+                <button class="close-button-mob-menu  button focused" type="button" data-menu-close>
+                    <svg class="close-button" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close-black"></use>
+                    </svg>
+                </button>
+                <div class="wrap-mob">
+                    <ul class="list-mob list ">
+                        <li class="focused ">
+                            <a class="navigation-item link list-link-mob focused current "
+                                href="./index.html">Studio</a>
+                        </li>
+                        <li class="focused">
+                            <a class="navigation-item link list-link-mob focused" href="./portfolio.html"
+                                target="_blank">Portfolio</a>
+                        </li>
+                        <li class="focused">
+                            <a class="navigation-item link list-link-mob focused" href="">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom-mob">
+                <div>
+                    <ul class="list container-nav">
+                        <li class="address-item-mob">
+                            <a class="address-info-mob focused link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                        </li>
+                        <li class="address-item-mail">
+                            <a class="address-info-mail focused link"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="profession-icon list">
+                    <li class="profession-icon-item">
+                        <a class="link-profession" href="https://www.instagram.com/">
+                            <svg class="icon" width="24" height="24">
+                                <use class="icon-svg" href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="profession-icon-item">
+                        <a class="link-profession" href="https://twitter.com/?lang=uk">
+                            <svg class="icon" width="24" height="24">
+                                <use class="icon-svg" href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="profession-icon-item">
+                        <a class="link-profession" href="https://uk-ua.facebook.com/">
+                            <svg class="icon" width="24" height="24">
+                                <use class="icon-svg" href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="profession-icon-item">
+                        <a class="link-profession"
+                            href="https://www.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F">
+                            <svg class="icon" width="24" height="24">
+                                <use class="icon-svg" href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
 
     <main>
         <section class="section-filter">
-            <div class="container">
+            <div class="container filt">
                 <h1 class="visually-hidden">filter</h1>
                 <ul class="section-filter-list list">
                     <li class="section-filter-item">
@@ -74,7 +151,16 @@
                     <li class="upper-item">
                         <a class="link-upper focused link" href="">
                             <div class="wraper-upper-imges">
-                                <img class="link-upper-img" src="./images/img1.jpg" alt="app" width="360" height="300">
+                                <picture>
+                                    <source srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
+                                        media="(min-width: 1158px)" />
+                                    <source srcset="./images/img1-tab.jpg 1x, ./images/img1-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="./images/img1-mob.jpg 1x, ./images/img1-mob-2x.jpg 2x"
+                                        media="(min-width: 320px)" />
+                                    <img class="link-upper-img" src="./images/img1.jpg" alt="app" width="396" />
+                                </picture>
+
                                 <p class="link-upper-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task
                                     Manager App · Calorie Tracker
@@ -90,8 +176,15 @@
                     <li class="upper-item">
                         <a class="link-upper focused link" href="">
                             <div class="wraper-upper-imges">
-                                <img class="link-upper-img" src="./images/img2.jpg" alt="marketing" width="360"
-                                    height="300">
+                                <picture>
+                                    <source srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"
+                                        media="(min-width: 1158px)" />
+                                    <source srcset="./images/img2-tab.jpg 1x, ./images/img2-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="./images/img2-mob.jpg 1x, ./images/img2-mob-2x.jpg 2x"
+                                        media="(min-width: 320px)" />
+                                    <img class="link-upper-img" src="./images/img2.jpg" alt="marketing" width="396" />
+                                </picture>
                                 <p class="link-upper-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task
                                     Manager App · Calorie Tracker
@@ -107,7 +200,15 @@
                     <li class="upper-item">
                         <a class="link-upper focused link" href="">
                             <div class="wraper-upper-imges">
-                                <img class="link-upper-img" src="./images/img3.jpg" alt="app" width="360" height="300">
+                                <picture>
+                                    <source srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"
+                                        media="(min-width: 1158px)" />
+                                    <source srcset="./images/img3-tab.jpg 1x, ./images/img3-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="./images/img3-mob.jpg 1x, ./images/img3-mob-2x.jpg 2x"
+                                        media="(min-width: 320px)" />
+                                    <img class="link-upper-img" src="./images/img3.jpg" alt="app" width="396" />
+                                </picture>
                                 <p class="link-upper-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task
                                     Manager App · Calorie Tracker
@@ -123,8 +224,15 @@
                     <li class="upper-item">
                         <a class="link-upper focused link" href="">
                             <div class="wraper-upper-imges">
-                                <img class="link-upper-img" src="./images/img4.jpg" alt="marketing" width="360"
-                                    height="300">
+                                <picture>
+                                    <source srcset="./images/img4.jpg 1x, ./images/img4-2x.jpg 2x"
+                                        media="(min-width: 1158px)" />
+                                    <source srcset="./images/img4-tab.jpg 1x, ./images/img4-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="./images/img4-mob.jpg 1x, ./images/img4-mob-2x.jpg 2x"
+                                        media="(min-width: 320px)" />
+                                    <img class="link-upper-img" src="./images/img4.jpg" alt="marketing" width="396" />
+                                </picture>
                                 <p class="link-upper-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task
                                     Manager App · Calorie Tracker
@@ -140,8 +248,15 @@
                     <li class="upper-item">
                         <a class="link-upper focused link" href="">
                             <div class="wraper-upper-imges">
-                                <img class="link-upper-img" src="./images/img5.jpg" alt="design" width="360"
-                                    height="300">
+                                <picture>
+                                    <source srcset="./images/img5.jpg 1x, ./images/img5-2x.jpg 2x"
+                                        media="(min-width: 1158px)" />
+                                    <source srcset="./images/img5-tab.jpg 1x, ./images/img5-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="./images/img5-mob.jpg 1x, ./images/img5-mob-2x.jpg 2x"
+                                        media="(min-width: 320px)" />
+                                    <img class="link-upper-img" src="./images/img5.jpg" alt="design" width="396" />
+                                </picture>
                                 <p class="link-upper-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task
                                     Manager App · Calorie Tracker
@@ -157,8 +272,15 @@
                     <li class="upper-item">
                         <a class="link-upper focused link" href="">
                             <div class="wraper-upper-imges">
-                                <img class="link-upper-img" src="./images/img6.jpg" alt="marketing" width="360"
-                                    height="300">
+                                <picture>
+                                    <source srcset="./images/img6.jpg 1x, ./images/img6-2x.jpg 2x"
+                                        media="(min-width: 1158px)" />
+                                    <source srcset="./images/img6-tab.jpg 1x, ./images/img6-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="./images/img6-mob.jpg 1x, ./images/img6-mob-2x.jpg 2x"
+                                        media="(min-width: 320px)" />
+                                    <img class="link-upper-img" src="./images/img6.jpg" alt="marketing" width="396" />
+                                </picture>
                                 <p class="link-upper-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task
                                     Manager App · Calorie Tracker
@@ -174,8 +296,15 @@
                     <li class="upper-item">
                         <a class="link-upper focused link" href="">
                             <div class="wraper-upper-imges">
-                                <img class="link-upper-img" src="./images/img7.jpg" alt="design" width="360"
-                                    height="300">
+                                <picture>
+                                    <source srcset="./images/img7.jpg 1x, ./images/img7-2x.jpg 2x"
+                                        media="(min-width: 1158px)" />
+                                    <source srcset="./images/img7-tab.jpg 1x, ./images/img7-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="./images/img7-mob.jpg 1x, ./images/img7-mob-2x.jpg 2x"
+                                        media="(min-width: 320px)" />
+                                    <img class="link-upper-img" src="./images/img7.jpg" alt="design" width="396" />
+                                </picture>
                                 <p class="link-upper-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task
                                     Manager App · Calorie Tracker
@@ -191,8 +320,15 @@
                     <li class="upper-item">
                         <a class="link-upper focused link" href="">
                             <div class="wraper-upper-imges">
-                                <img class="link-upper-img" src="./images/img8.jpg" alt="web site" width="360"
-                                    height="300">
+                                <picture>
+                                    <source srcset="./images/img8.jpg 1x, ./images/img8-2x.jpg 2x"
+                                        media="(min-width: 1158px)" />
+                                    <source srcset="./images/img8-tab.jpg 1x, ./images/img8-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="./images/img8-mob.jpg 1x, ./images/img8-mob-2x.jpg 2x"
+                                        media="(min-width: 320px)" />
+                                    <img class="link-upper-img" src="./images/img8.jpg" alt="web site" width="396" />
+                                </picture>
                                 <p class="link-upper-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task
                                     Manager App · Calorie Tracker
@@ -208,8 +344,15 @@
                     <li class="upper-item">
                         <a class="link-upper focused link" href="">
                             <div class="wraper-upper-imges">
-                                <img class="link-upper-img" src="./images/img9.jpg" alt="web site" width="360"
-                                    height="300">
+                                <picture>
+                                    <source srcset="./images/img9.jpg 1x, ./images/img9-2x.jpg 2x"
+                                        media="(min-width: 1158px)" />
+                                    <source srcset="./images/img9-tab.jpg 1x, ./images/img9-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="./images/img9-mob.jpg 1x, ./images/img9-mob-2x.jpg 2x"
+                                        media="(min-width: 320px)" />
+                                    <img class="link-upper-img" src="./images/img9.jpg" alt="web site" width="396" />
+                                </picture>
                                 <p class="link-upper-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task
                                     Manager App · Calorie Tracker
@@ -227,7 +370,7 @@
         </section>
     </main>
     <footer class="footer">
-        <div class=" cont-footer">
+        <div class=" cont-footer container">
             <div class="wraper-foter-light">
                 <a class="footer-logo focused link" href="./index.html">Web
                     <span class="logo-footer">Studio</span>
@@ -275,7 +418,7 @@
                 <p class="form-footer-title">Subscribe</p>
                 <form class="form-footer">
                     <label class="form-footer-lab" for="inp-footer">
-                        <input name="inp-footer" class="form-footer-inp" id="inp-footer" type="email"
+                        <input class="form-footer-inp" name="inp-footer" id="inp-footer" type="email"
                             placeholder="E-mail" />
                     </label>
                     <button class="button-form-footer" type="submit">Subscribe
@@ -287,6 +430,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
