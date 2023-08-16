@@ -299,7 +299,7 @@ img {
   gap: 72px;
   max-width: 1440px;
   margin: 0 auto;
-  height: 432px;
+  min-height: 432px;
 }
 
 .title {
@@ -437,6 +437,7 @@ img {
   display: flex;
   justify-content: center;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
 .profession-icon-item {

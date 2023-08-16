@@ -87,7 +87,7 @@
   }
 
   .container-subject {
-    height: 436px;
+    min-height: 436px;
     gap: 36px;
   }
 
@@ -232,7 +232,7 @@
   }
 
   .container-subject {
-    height: 600px;
+    min-height: 600px;
     gap: 48px;
   }
 
@@ -290,7 +290,6 @@
 
   .benefits-list {
     padding-top: 72px;
-    padding-bottom: 120px;
     display: flex;
     justify-content: center;
     gap: 24px;
